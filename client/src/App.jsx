@@ -8,10 +8,9 @@ function App() {
     <BrowserRouter>
       <Navigation/>
       <Routes>
-        <Route path="/" element={<Navigate to="/prestamos"/>}/>
-        <Route path="/prestamos" element={<PrestamosPage/>}/>
+        <Route path="/" element={<Navigate to="/prestamos/"/>}/>
+        <Route path="/prestamos/" element={<PrestamosPage/>}/>
         <Route path="/prestamos-create" element={<PrestamosFormPage/>}/>
-        <Route path="/prestamos/:idprestamo" element={<PrestamosFormPage/>}/>
       </Routes>
     </BrowserRouter>
   )

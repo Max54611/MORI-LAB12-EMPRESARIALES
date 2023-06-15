@@ -11,3 +11,5 @@ export const getAllPrestamos = () => {
 export const createPrestamo = (prestamo) => {
    return prestamosApi.post('/', prestamo)
 }
+
+export const deletePrestamo = (idprestamo) => prestamosApi.delete('/'+idprestamo)
